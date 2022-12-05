@@ -37,8 +37,11 @@ A laravel based QuizApp
 ```
 git clone repo
 cp .env.example .env
+#Install php8.1
+apt install php8.1-common php8.1-fpm php8.1-curl php8.1-zip php8.1-mysql php8.1-xml
+#Composer Install to download vendor dependency
+composer install
 #Setup database 
-
 #Seed will create 1 super-admin, 1 admin and initial quotes loaded to database, spatie initial roles and permissions.
 
 php artisan migrate:fresh --seed
